@@ -1,0 +1,18 @@
+{
+  "name": "keyhasher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "keyhasher",
+    "keyhash",
+    "hash",
+    "key hash",
+    "key hashing"
+  ],
+  "author": "igeek",
+  "license": "ISC"
+}
