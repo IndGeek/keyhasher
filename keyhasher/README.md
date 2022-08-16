@@ -32,4 +32,6 @@ console.log(`Output: ${rawWord}`)
 // Real Phrase: Hi
 
 ```
-    
+[©IndGeek](https://indgeek.com)
+
+[©Soumya Mondal](https://soumyamondal.com)

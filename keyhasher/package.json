@@ -1,11 +1,12 @@
 {
   "name": "keyhasher",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "homepage": "http://metatool.in/hash",
   "keywords": [
     "keyhasher",
     "keyhash",
@@ -14,5 +15,5 @@
     "key hashing"
   ],
   "author": "igeek",
-  "license": "ISC"
+  "license": "MIT"
 }
