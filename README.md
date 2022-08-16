@@ -1,6 +1,11 @@
 
 ## Installation
 
+```
+npm install keyhasher
+```
+
+## Importing
 ```javascript
 const key = require('keyhasher');
 ```
