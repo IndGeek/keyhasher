@@ -21,17 +21,30 @@ N
 ```javascript
 const key = require('keyhasher');
 
-var hashAble = key.hash("Hi", passcode);
+var hashAble = key.hash("Normal Sentence", passcode);
+console.log(`Hashed Phrase: ${hashAble}`)
+
+var rawWord = key.revHash("Hashed code", passcode);
+console.log(`Output: ${rawWord}`)
+
+
+```
+### Example 💡
+
+```javascript
+
+var hashAble = key.hash("Hi", 572);
 console.log(`Hashed Phrase: ${hashAble}`)
 
 // Hashed Phrase: X4A=
 
-var rawWord = key.revHash("X4A=", passcode);
+var rawWord = key.revHash("X4A=", 572);
 console.log(`Output: ${rawWord}`)
 
 // Real Phrase: Hi
 
 ```
+
 [©IndGeek](https://indgeek.com)
 
 [©Soumya Mondal](https://soumyamondal.com)
