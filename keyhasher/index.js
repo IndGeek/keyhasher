@@ -53,10 +53,10 @@ const revHash = function (string, pass) {
 module.exports = {hash, revHash}
 
 
-// const quick = require('quickhash');
+// const key = require('keyhasher');
 
-// var op = quick.hash('okay', 3);
+// var op = key.hash('okay', 3);
 // console.log(op)
 
-// var op2 = quick.revHash(op, 3);
+// var op2 = key.revHash(op, 3);
 // console.log(op2)
