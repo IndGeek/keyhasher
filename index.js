@@ -19,7 +19,7 @@ const hash = function (string, pass) {
     }
     outputStr = output.join('')
 
-    const bConvert = btoa(outputStr);
+    const bConvert = Buffer.from(outputStr).toString('base64');
 
     return bConvert;
 
@@ -33,7 +33,7 @@ const revHash = function (string, pass) {
         saltRev = saltRev % 26;
     }
 
-    const bReverse = atob(inputRev); // reverse first from base64 to text salted
+    const bReverse = Buffer.from(inputRev, 'base64').toString();
 
     var revArr = bReverse.split('');
     var revOutput = []
