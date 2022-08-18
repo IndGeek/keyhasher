@@ -1,4 +1,6 @@
+Simple, effective, easy to implement encryption for JavaScript
 
+![Logo](./assets/keyhasher.jpg)
 ## Installation
 
 ```
