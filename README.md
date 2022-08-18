@@ -1,6 +1,6 @@
 Simple, effective, easy to implement encryption for JavaScript
 
-![Logo](./assets/keyhasher.jpg)
+![Logo](https://cdn.discordapp.com/attachments/941650096855068752/1009750552088956958/keyhasher.jpg)
 ## Installation
 
 ```
