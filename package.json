@@ -1,8 +1,8 @@
 {
   "name": "keyhasher",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "description": "",
-  "main": "index.js",
+  "main": "encrypthashop.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
