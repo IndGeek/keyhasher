@@ -1,8 +1,10 @@
 var {moreSalting} = require('./algos/somersault')
+require('dotenv').config();
 
 const hash = function (string, pass) {
     const input = string;
-    var salt = parseInt(pass) + process.env.SECRET;
+    var salt = parseInt(pass);
+    salt -=  parseInt(process.env.SECRET);
         
     var extraSalt = moreSalting(salt);
 
@@ -31,7 +33,9 @@ const hash = function (string, pass) {
 
 const revHash = function (string, pass) {
     const inputRev = string;
-    var saltRev = parseInt(pass) - process.env.SECRET;
+    var saltRev = parseInt(pass);
+    saltRev -=  parseInt(process.env.SECRET);
+
         
     var extraSaltRev = moreSalting(saltRev);
 
