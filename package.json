@@ -19,5 +19,8 @@
     "key hashing"
   ],
   "author": "igeek",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.2"
+  }
 }

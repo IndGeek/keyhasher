@@ -2,7 +2,7 @@ var {moreSalting} = require('./algos/somersault')
 
 const hash = function (string, pass) {
     const input = string;
-    var salt = parseInt(pass);
+    var salt = parseInt(pass) + process.env.SECRET;
         
     var extraSalt = moreSalting(salt);
 
@@ -31,7 +31,7 @@ const hash = function (string, pass) {
 
 const revHash = function (string, pass) {
     const inputRev = string;
-    var saltRev = parseInt(pass);
+    var saltRev = parseInt(pass) - process.env.SECRET;
         
     var extraSaltRev = moreSalting(saltRev);
 
