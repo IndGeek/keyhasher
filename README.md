@@ -28,10 +28,10 @@ N
 ```javascript
 const key = require('keyhasher');
 
-var hashAble = key.hash("Normal Sentence", passcode);
+var hashAble = key.hash("Normal Sentence", process.env.passcode);
 console.log(`Hashed Phrase: ${hashAble}`)
 
-var rawWord = key.revHash("Hashed code", passcode);
+var rawWord = key.revHash("Hashed code", process.env.passcode);
 console.log(`Output: ${rawWord}`)
 
 
