@@ -1,5 +1,7 @@
 var {moreSalting} = require('./algos/somersault')
+const sha256 = require('./algos/sha256')
 require('dotenv').config();
+
 const hash = function (string, pass) {
     const input = string;
     var salt = parseInt(pass);
@@ -56,7 +58,7 @@ const revHash = function (string, pass) {
     return revOutputStr;
 }
 
-module.exports = {hash, revHash}
+module.exports = {hash, revHash, sha256}
 
 
 // const key = require('keyhasher');
