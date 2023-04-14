@@ -2,7 +2,7 @@ var {moreSalting} = require('./algos/somersault')
 const sha256 = require('./algos/sha256')
 require('dotenv').config();
 
-const hash = function (string, pass) {
+const encrypt = function (string, pass) {
     const input = string;
     var salt = parseInt(pass);
         
@@ -31,7 +31,7 @@ const hash = function (string, pass) {
 
 }
 
-const revHash = function (string, pass) {
+const decrypt = function (string, pass) {
     const inputRev = string;
     var saltRev = parseInt(pass);
         
@@ -58,7 +58,32 @@ const revHash = function (string, pass) {
     return revOutputStr;
 }
 
-module.exports = {hash, revHash, sha256}
+const hashCompare = function (data, hash){
+    if (data == null || hash == null) {
+        throw new Error('Pass proper arguments');
+    }
+    const buf1 = Buffer.from(data, 'utf8');
+    const buf2 = Buffer.from(hash, 'utf8');
+
+    // Using a constant-time comparison technique
+    let result = true;
+    if (buf1.length !== buf2.length) {
+        result = false;
+    } else {
+        for (let i = 0; i < buf1.length; i++) {
+        // Use bitwise XOR to compare the characters
+        result &= (buf1[i] === buf2[i]);
+        }
+    }
+
+    // Clear the buffer objects to remove sensitive data from memory
+    buf1.fill(0);
+    buf2.fill(0);
+
+    return result;
+}
+
+module.exports = {encrypt, decrypt, hash: sha256, hashCompare}
 
 
 // const key = require('keyhasher');

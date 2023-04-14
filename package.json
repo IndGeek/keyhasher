@@ -1,8 +1,8 @@
 {
   "name": "keyhasher",
-  "version": "1.3.3",
-  "description": "",
-  "main": "encrypthashop.js",
+  "version": "1.5.1",
+  "description": "Simple, effective, easy to implement encryption for JavaScript",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,13 +10,19 @@
     "type": "git",
     "url": "git://github.com/IndGeek/Keyhasher-npm"
   },
-  "homepage": "http://metatool.in/hash",
+  "homepage": "https://keyhasher.nated.in",
   "keywords": [
     "keyhasher",
     "keyhash",
     "hash",
     "key hash",
-    "key hashing"
+    "key hashing",
+    "key encryption",
+    "password",
+    "auth",
+    "authentication",
+    "encryption",
+    "crypt"
   ],
   "author": "igeek",
   "license": "MIT",
